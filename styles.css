@@ -27,7 +27,8 @@ h1 {
   /* word-wrap: break-word; */
   line-height: 2.5rem;
   font-weight: normal;
-  font-weight: 100;
+  /* font-weight: 100; */
+  font-weight: 200;
   color: #fff;
 }
 
@@ -54,7 +55,6 @@ h4 {
 #main-content {
   width: 100%;
   height: 667px;
-  /* width: 375px; */
 }
 
 #header {
@@ -93,16 +93,23 @@ h4 {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #header .nav-links {
     display: flex;
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
     list-style-type: none;
     font-weight: 200;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.16em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header .nav-links {
+    width: 60%;
+    font-size: 14px;
   }
 }
 
@@ -178,7 +185,7 @@ h4 {
   transition: 0.4s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .mobile-nav {
     display: none;
   }
@@ -188,10 +195,11 @@ h4 {
   }
 }
 
-#cover {
-width: 100%;
-margin: 0 auto;
-}
+/* #cover {
+ /* height: 100vh;
+  margin: 0 auto; */
+  /* background-image: url(./assets/DSC_9300_opt.jpg); */
+/* }  */
 
 #cover .info {
   position: absolute;
@@ -205,8 +213,10 @@ margin: 0 auto;
 
 #cover .image1,
 .image3 {
+  display: block;
   height: 100vh;
-  max-width: 100%;
+  /* max-width: 100%; */
+  object-fit: contain;
 }
 
 #feature {
@@ -214,7 +224,7 @@ margin: 0 auto;
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #feature {
     display: flex;
     flex-direction: row-reverse;
@@ -230,7 +240,7 @@ margin: 0 auto;
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .feature-responsive {
     width: 50%;
     padding: 0.5em;
@@ -240,6 +250,12 @@ margin: 0 auto;
     object-fit: cover;
   }
 }
+
+#feature-panel {
+height: auto !important;
+min-height: 400px;
+}
+
 
 #feature .description {
   width: 100%;
@@ -283,17 +299,39 @@ margin: 0 auto;
 
 #feature,
 #footer .inner,
-#kew-grid, #content {
+#kew-grid,
+#content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   #feature,
   #footer .inner,
-  #kew-grid, #content {
+  #kew-grid,
+  #content {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  #feature,
+  #footer .inner,
+  #kew-grid,
+  #content {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  #feature,
+  #footer .inner,
+  #kew-grid,
+  #content {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -312,7 +350,6 @@ a:visited {
   justify-items: center;
   grid-template-columns: 50% 50%;
   padding: 10px 0;
-  /* justify-content: space-around; */
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -335,9 +372,14 @@ a:visited {
   padding: 30px 0 10px 0;
 }
 
+@media (min-width: 767px) {
+  #footer .socials {
+      width: 70%;
+    }
+  }
+
 a {
   color: #757575;
-  /* padding: 0 50px; */
 }
 
 #kew-grid .artwork-info {
@@ -360,6 +402,13 @@ a {
   padding: 60px 0 0;
   line-height: 0;
   margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  #kew-grid .grid-btn-container,
+  .grid-btn-container-available {
+    padding: 70px 0 0;
+  }
 }
 
 #kew-grid .artwork-price {
@@ -397,7 +446,7 @@ a {
     align-items: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #kew-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -410,6 +459,10 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+#kew-grid #grid-img:hover {
+  cursor: pointer;
 }
 
 .fade-in {
@@ -425,5 +478,57 @@ a {
 }
 
 
-/* BREAKPOINTS */
+@media (min-width: 767px) {
+i {
+    font-size: 1.5em;
+  }
+}
 
+/* BREAKPOINTS */
+/* 480px */
+/* 767px */
+/* 992px */
+/* 1200px */
+
+
+.image-cover-full-width {
+  padding: 24em;
+  background-image: url(./assets/DSC_9289_opt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.feature-cover-full-width {
+  padding: 7em;
+  background-image: url(./assets/DSC_9286_opt.jpg);
+  /* max-height: 400px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-container {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+#central-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.title {
+  color: #fff;
+  font-weight: 300;
+
+}
+
+.sub-title {
+  color: #fff;
+}
