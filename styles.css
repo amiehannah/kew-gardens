@@ -188,6 +188,11 @@ h4 {
   }
 }
 
+#cover {
+width: 100%;
+margin: 0 auto;
+}
+
 #cover .info {
   position: absolute;
   z-index: 93;
@@ -201,7 +206,7 @@ h4 {
 #cover .image1,
 .image3 {
   height: 100vh;
-  width: 100%;
+  max-width: 100%;
 }
 
 #feature {
