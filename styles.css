@@ -208,7 +208,6 @@ h4 {
 }
 
 #cover {
-  outline: 3px solid purple;
   position: relative;
 }
 #cover .info {
@@ -217,10 +216,9 @@ h4 {
   z-index: 93;
   padding-left: 15px;
   right: 0;
-  top: 58%;
+  top: 75%;
   margin: 0 auto;
   width: 100%;
-  outline: 3px solid turquoise;
 }
 
 @media (min-width: 767px) {
