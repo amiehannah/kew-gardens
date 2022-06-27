@@ -209,7 +209,7 @@ h4 {
 
 #cover {
   outline: 3px solid purple;
-  /* height: 100vh; */
+  position: relative;
 }
 #cover .info {
   position: absolute;
@@ -218,8 +218,8 @@ h4 {
   z-index: 93;
   padding-left: 15px;
   right: 0;
-  top: 80vh;
-  /* bottom: 40px; */
+  /* top: 75vh; */
+  bottom: 50px;
   margin: 0 auto;
   width: 100%;
   outline: 3px solid turquoise;
