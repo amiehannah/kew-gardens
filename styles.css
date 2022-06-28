@@ -22,7 +22,7 @@ h4 {
 }
 h1 {
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: 32px;
   /* word-wrap: break-word; */
   line-height: 2.5rem;
   font-weight: normal;
@@ -153,7 +153,7 @@ h4 {
 
 .hamburger.is-active:before {
   background-color: #757575;
-  transform: rotate(-45deg) translate(-2px, 5px);
+  transform: rotate(-45deg) translate(-3px, 7px);
 }
 
 .hamburger.is-active:after {
@@ -217,7 +217,7 @@ h4 {
   z-index: 93;
   padding-left: 15px;
   right: 0;
-  top: 65vh;
+  top: 55vh;
   margin: 0 auto;
   width: 100%;
 }
@@ -229,6 +229,7 @@ h4 {
 } */
 @media (min-width: 767px) {
   #cover .info {
+    top: 70vh;
     padding-left: 30px;
   }
 }
@@ -277,10 +278,6 @@ h4 {
   }
 }
 
-#feature-panel {
-  height: auto !important;
-  min-height: 400px;
-}
 
 #feature .description {
   width: 100%;
@@ -587,10 +584,19 @@ a:hover {
     opacity 2500ms cubic-bezier(0.18, 1, 0.21, 1);
 }
 
+i {
+  font-size: 1.25em;
+}
+
 @media (min-width: 767px) {
   i {
     font-size: 1.5em;
   }
+}
+
+#feature-panel {
+  height: auto !important;
+  min-height: 400px;
 }
 
 .image-cover-full-width {
@@ -629,17 +635,20 @@ a:hover {
 }
 
 #central-title {
-  display: flex;
+  /* display: flex; */
   text-align: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 100%;
 }
 
 .title {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 300;
+  font-size: 32px;
 }
 
 .sub-title {
   color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
 }
