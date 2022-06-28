@@ -218,16 +218,16 @@ h4 {
   z-index: 93;
   padding-left: 15px;
   right: 0;
-  top: 55vh;
+  /* top: 55vh; */
+  bottom: 20%;
   margin: 0 auto;
   width: 100%;
 }
 
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   #cover .info {
-    top: 50vh;
-  }
-}
+    /* top: 50vh; */
+
 @media (min-width: 992px) {
   #cover .info {
     padding-left: 30px;
