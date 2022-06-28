@@ -223,12 +223,12 @@ h4 {
   width: 100%;
 }
 
-/* @media (min-width: 375px) {
+@media (min-width: 480px) {
   #cover .info { 
-    top: 70vh;
+    top: 60vh;
   }
-} */
-@media (min-width: 767px) {
+}
+@media (min-width: 992px) {
   #cover .info {
     top: 70vh;
     padding-left: 30px;
