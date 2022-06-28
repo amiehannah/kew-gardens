@@ -66,6 +66,7 @@ h4 {
 
 #main-content {
   width: 100%;
+  overflow-x: hidden !important;
   /* height: 667px; */
 }
 
@@ -169,7 +170,8 @@ h4 {
   position: fixed;
   top: 0;
   left: 100%;
-  width: 100%;
+  width: 100vw;
+  /* width:100%; */
   min-height: 100vh;
   display: block;
   z-index: 98;
@@ -216,11 +218,16 @@ h4 {
   z-index: 93;
   padding-left: 15px;
   right: 0;
-  top: 75%;
+  top: 70vh;
   margin: 0 auto;
   width: 100%;
 }
 
+@media (min-width: 375px) {
+  #cover .info { 
+    top: 70vh;
+  }
+}
 @media (min-width: 767px) {
   #cover .info {
     padding-left: 30px;
@@ -513,7 +520,7 @@ a:hover {
 #kew-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 345px;
+  grid-template-columns: 290px;
   padding-top: 4em;
   padding-bottom: 2em;
   overflow-x: hidden !important;
@@ -521,6 +528,12 @@ a:hover {
   justify-content: center;
   margin: 0 auto;
 }
+
+/* @media (min-width: 375px) {
+  #kew-grid {
+  grid-template-columns: 345px;
+  }
+} */
 
 @media (min-width: 500px) {
   #kew-grid {
