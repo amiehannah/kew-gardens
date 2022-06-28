@@ -230,7 +230,6 @@ h4 {
 }
 @media (min-width: 992px) {
   #cover .info {
-    top: 70vh;
     padding-left: 30px;
   }
 }
