@@ -224,8 +224,8 @@ h4 {
 }
 
 @media (min-width: 480px) {
-  #cover .info { 
-    top: 60vh;
+  #cover .info {
+    top: 50vh;
   }
 }
 @media (min-width: 992px) {
